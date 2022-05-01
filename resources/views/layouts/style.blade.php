@@ -1,7 +1,7 @@
 <!-- CSS -->
-<link rel="stylesheet" href="./assets/component.css">
-<link rel="stylesheet" href="./assets/style.css">
-<link rel="stylesheet" href="./assets/grid.css">
+<link rel="stylesheet" href="{{ asset('assets/component.css')}}">
+<link rel="stylesheet" href="{{ asset('assets/style.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/grid.css') }}">
 
 <!-- GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,5 +19,5 @@
 
 <!-- BOX ICON  -->
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-<link rel="stylesheet" href="<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.min.css">

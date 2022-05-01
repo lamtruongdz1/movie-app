@@ -10,7 +10,7 @@
      <link rel="shortcut icon" href="./assets/img/Images/logo-foursquare.svg">
      @include('layouts.style')
 </head>
-@include('layouts.header')
+@yield('navbar')
 @yield('content')
 @include('layouts.footer')
 @include('layouts.script')

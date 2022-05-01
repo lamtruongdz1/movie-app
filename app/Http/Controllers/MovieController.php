@@ -18,9 +18,9 @@ class MovieController extends Controller
         $getMoviePagination =  Http::get('https://ophim1.com/danh-sach/phim-moi-cap-nhat')->json()['pagination'];
         $pageNumber = $getMoviePagination['totalPages'];
         for ($i=0; $i < 10 ; $i++) {
-            $getMovie = Http::get('https://ophim1.com/danh-sach/phim-moi-cap-nhat?page='.$i)->json();
+            $getMovie = Http::get('https://ophim1.com/danh-sach/phim-moi-cap-nhat?page='.$i)->json()['items'];
         }
-        dd($getMovie);
+        // dd($getMovie);
 
 
         return view('movies.index', compact('getMovie'));
@@ -58,7 +58,7 @@ class MovieController extends Controller
         $movieDetails = Http::get('https://ophim1.com/phim/' . $slug)->json()['movie'];
         $movieEpisodes = Http::get('https://ophim1.com/phim/' . $slug)->json()['episodes'];
         $slot = $movieEpisodes[0]['server_data'];
-
+        // dd($movieDetails);
 
         return view('movies.show', compact('movieDetails', 'movieEpisodes', 'slot'));
     }
